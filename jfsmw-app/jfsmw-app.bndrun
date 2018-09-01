@@ -1,0 +1,14 @@
+index: target/index.xml;name="jfsmw-app"
+
+-standalone: ${index}
+
+-runrequires: osgi.identity;filter:='(osgi.identity=net.jfilesync.jfsmw.core-impl)',\
+    osgi.identity;filter:='(osgi.identity=net.jfilesync.jfsmw.core-ui-impl)',\
+    osgi.identity;filter:='(osgi.identity=net.jfilesync.jfsmw.core-ui-javafx-init)'
+-runfw: org.eclipse.osgi
+-runee: JavaSE-1.8
+-runbundles: \
+	net.jfilesync.jfsmw.core-impl;version='[0.0.1,0.0.2)',\
+	org.apache.felix.scr;version='[2.1.0,2.1.1)',\
+	net.jfilesync.jfsmw.core-ui-impl;version='[0.0.1,0.0.2)',\
+	net.jfilesync.jfsmw.core-ui-javafx-init;version='[0.0.1,0.0.2)'

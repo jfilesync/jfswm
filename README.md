@@ -8,7 +8,16 @@ It is inspired by [JFileSync](http://jfilesync.sourceforge.net/).
 
 ## Building
 
+    ./mvnw verify
+    ./mvnw install
+    ./mvnw bnd-resolver:resolve
+    ./mvnw package
+    
+    java -jar jfsmw-app/target/jfsmw-app.jar
+    
 ## Development
+
+    java -jar jfsmw-app/target/debug.jar
 
 ### Adding a new module
 <https://enroute.osgi.org/tutorial/030-tutorial_microservice.html>

@@ -28,4 +28,5 @@ test-index: target/test-index.xml;name="jfsmw-app Test"
 	org.apache.felix.webconsole;version='[4.3.4,4.3.5)',\
 	org.apache.felix.webconsole.plugins.ds;version='[2.0.8,2.0.9)',\
 	net.jfilesync.jfsmw.core-ui-impl;version='[0.0.1,0.0.2)',\
-	net.jfilesync.jfsmw.core-ui-javafx-init;version='[0.0.1,0.0.2)'
+	net.jfilesync.jfsmw.core-ui-javafx-init;version='[0.0.1,0.0.2)',\
+	net.jfilesync.jfsmw.core-ui-api;version='[0.0.1,0.0.2)'
